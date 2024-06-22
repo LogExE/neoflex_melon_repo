@@ -1,0 +1,5 @@
+netconf:
+  app_port: 8080
+  node_port: 30080
+misc:
+  replicas: 2

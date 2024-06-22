@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-web-deployment
+spec:
+  replicas: {{ .Values.misc.replicas }}
+  selector:
+    matchLabels:
+      app: java-web
+  template:
+    metadata:
+      name: java-web
+      labels:
+        app: java-web
+    spec:
+      containers:
+      - image: docker.io/logxx/neoflex-tasks:java-fix
+        name: main

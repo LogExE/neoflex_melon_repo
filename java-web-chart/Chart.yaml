@@ -1,0 +1,8 @@
+apiVersion: v2
+name: A Java web chart example
+version: "1"
+description: A containerized java web application running in k8s.
+keywords:
+  - java
+  - neoflex
+  - task
