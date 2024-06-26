@@ -2,4 +2,6 @@ netconf:
   app_port: 8080
   node_port: 30080
 misc:
+  app_name: java-web
   replicas: 6
+  app_image: docker.io/logxx/neoflex-tasks:java-fix

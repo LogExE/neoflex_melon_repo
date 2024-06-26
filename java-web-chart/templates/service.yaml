@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: java-web-nodeport
+  name: {{ .Values.misc.app_name }}-nodeport
 spec:
   type: NodePort
   ports:
@@ -10,4 +10,4 @@ spec:
     targetPort: {{ .Values.netconf.app_port }}
     nodePort: {{ .Values.netconf.node_port }}
   selector:
-    app: java-web
+    app: {{ .Values.misc.app_name }}
